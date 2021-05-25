@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var extra = require('./extra.js')
 
 var arr = [{a : 3}, {a: 4}];
 var ctx = {b : 5};
