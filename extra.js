@@ -79,7 +79,7 @@ internals.createHistoryModel = function (model, options) {
          * @return {*}
          */
         restore: function () {
-            var values = _.pick(this, options.track);
+            var values = _.pickBy(this, options.track);
 
             return this.getSource()
                 .then(function (source) {
